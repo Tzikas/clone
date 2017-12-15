@@ -14,9 +14,6 @@ router.get('/', function(req, res, next) {
 router.get('/account', function(req, res, next) {
   res.render('account');
 });
-process.env.AWS_ACCESS_KEY_ID='AKIAJ4BJU7HYM6WQORVA'
-process.env.AWS_SECRET_ACCESS_KEY='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'
-process.env.S3_BUCKET = 's3bucket4me'
 console.log('S3_BUCKET') 
 //console.log(process.env)
 const S3_BUCKET = process.env.S3_BUCKET;
